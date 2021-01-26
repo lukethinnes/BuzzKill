@@ -6,7 +6,7 @@ const strainName = queryParams.get('name')
 const baseURL = 'strainapi.evanbusse.com/TEkvrIZ/strains/search/name/NAME'
 let strainURL = baseURL
 
-if(strainName){
+if (strainName) {
   strainURL = `http://strainapi.evanbusse.com/TEkvrIZ/strains/search/name/${strainName}`
 }
 
