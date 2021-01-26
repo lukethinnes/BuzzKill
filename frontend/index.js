@@ -13,3 +13,5 @@ fetch("http://localhost:3000/effects")
             $optionLocation.append($option)
         }
     }))
+
+
