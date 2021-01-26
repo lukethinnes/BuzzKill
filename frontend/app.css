@@ -3,15 +3,56 @@
 body {
     background-color: greenyellow;
     color: white;
-    background-image: repeating-linear-gradient(red, greenyellow 15%, yellow 15%);
+    background-image: repeating-radial-gradient(farthest-corner, rgb(255, 2, 87) 0.3%, rgba(243, 255, 82, 0.849) 0.8%, rgb(255, 0, 0) 0.8%);
     font-family: 'Calligraffitti', cursive;
     text-shadow: 1.5px 1.5px #000000;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+  background: -webkit-linear-gradient(#07e, #5b1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+  background: -webkit-linear-gradient(#07e, #5b1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h3 {
+    display: flex;
+    justify-content: center;
+  background: -webkit-linear-gradient(#07e, #5b1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 img {
     display: flex;
     justify-content: center;
     max-width: 300px;
+}
+
+#side-effects{
+  border: 3px solid rebeccapurple;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  width: 8%;
+}
+
+#submit{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  width: 3%;
 }
 
 #saved-strains{
@@ -26,15 +67,20 @@ img {
 }
 
 #spiral{
-  position: relative;
-  top: 50%;
-  left: 40%;
+  border: 3px solid rebeccapurple;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
 #melt{
-  position: relative;
-  top: 50%;
-  left: 40%;
+  margin-top: 20px;
+  border: 3px solid rgb(0, 255, 170);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
 #strain-element{
@@ -53,7 +99,10 @@ img {
     top: 50%;
     left: 50%;
 }
+
 #home-button:hover {
     background-color: #4CAF50; /* Green */
     color: white;
-  }
+ }
+  
+
