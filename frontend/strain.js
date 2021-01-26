@@ -13,7 +13,6 @@ if (strainName) {
 fetch(strainURL)
   .then(response => response.json())
   .then(strain => {
-    console.log(strain)
     const h1 = document.createElement('h1')
     const p = document.createElement('p')
 
@@ -23,3 +22,22 @@ fetch(strainURL)
 
     strainElement.append(h1, p)
   })
+
+fetch(strainURL)
+.then(response => response.json())
+.then(strain => {
+  console.log(strain)
+  fetch(`http://strainapi.evanbusse.com/TEkvrIZ/strains/data/effects/${strain[0].id}`)
+  .then(response => response.json())
+  .then(effects => {
+    const h2 = document.createElement('h2')
+    h2.innerText = 'Other Negative Effects:'
+    strainElement.append(h2)
+    effects.negative.forEach(effect => {
+      const h2 = document.createElement('h2')
+      h2.innerText = effect
+      strainElement.append(h2)
+    })
+    
+  })
+})
