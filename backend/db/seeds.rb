@@ -5,3 +5,10 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+Effect.destroy_all 
+
+response = JSON.parse(RestClient.get("http://strainapi.evanbusse.com/TEkvrIZ/searchdata/effects"))
+
+response.each do |effect|
+  Effect.create(name: effect["effect"], effect_type: effect["type"])
+end
