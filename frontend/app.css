@@ -36,3 +36,24 @@ img {
   top: 50%;
   left: 40%;
 }
+
+#strain-element{
+  width: 300px;
+  border: 15px solid green;
+  padding: 50px;
+  margin: 20px;
+  position: relative;
+  top: 50%;
+  left: 35%;
+}
+
+#home-button{
+    transition-duration: 0.4s;
+    position: relative;
+    top: 50%;
+    left: 50%;
+}
+#home-button:hover {
+    background-color: #4CAF50; /* Green */
+    color: white;
+  }
