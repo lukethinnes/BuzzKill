@@ -21,7 +21,7 @@ fetch(strainURL)
     strains.forEach(strain => {
       const h4 = document.createElement('h4')
       
-      h4.innerHTML = `Name: ${strain.name} <br> Race:  ${strain.race}`
+      h4.innerHTML = `<a href='http://localhost:3001/strain.html?name=${strain.name}'> Name: ${strain.name} <br> Race:  ${strain.race} </a>`
 
       savedStrains.append(h4)
     })
