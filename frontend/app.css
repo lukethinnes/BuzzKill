@@ -15,6 +15,13 @@ h1 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+a {
+  display: flex;
+    justify-content: center;
+  background: -webkit-linear-gradient(#07e, #5b1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 h2 {
     display: flex;
@@ -38,7 +45,17 @@ img {
     max-width: 300px;
 }
 
-#side-effects{
+.selects{
+  border: 3px solid rebeccapurple;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  width: 8%;
+
+}
+
+.index-labels{
   border: 3px solid rebeccapurple;
   display: block;
   margin-left: auto;
@@ -58,12 +75,13 @@ img {
 #saved-strains{
   height:300px;
   width:300px;
-  border:1px solid #ccc;
+  border:8px solid rebeccapurple;
   font:16px/26px Georgia, Garamond, Serif;
   overflow:auto;
-  position:realtive;
+  position:absolute;
   top:50%;
-  left:40%;
+  left:39%;
+  margin-top: auto;
 }
 
 #spiral{
@@ -93,16 +111,28 @@ img {
   left: 35%;
 }
 
-#home-button{
+.buttons{
     transition-duration: 0.4s;
     position: relative;
     top: 50%;
     left: 50%;
 }
 
-#home-button:hover {
-    background-color: #4CAF50; /* Green */
+.buttons:hover {
+    background-color: #F20A0A; /* Green */
     color: white;
  }
-  
+
+ #submit-button{
+  transition-duration: 0.4s;
+  position: relative;
+  top: 50%;
+  left: 47%;
+  margin-top: 25px;
+}
+#submit-button:hover {
+  background-color: #F20A0A; /* Green */
+  color: white;
+}
+
 
