@@ -11,6 +11,7 @@ body {
 h1 {
     display: flex;
     justify-content: center;
+    font-size: 40px;
   background: -webkit-linear-gradient(#07e, #5b1);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -74,14 +75,14 @@ img {
 
 #saved-strains{
   height:300px;
-  width:300px;
+  width:450px;
   border:8px solid rebeccapurple;
   font:16px/26px Georgia, Garamond, Serif;
   overflow:auto;
-  position:absolute;
+  position:relative;
   top:50%;
-  left:39%;
-  margin-top: auto;
+  left:33%;
+  margin-top: 20px;
 }
 
 #spiral{
@@ -103,19 +104,19 @@ img {
 
 #strain-element{
   width: 300px;
-  border: 15px solid green;
+  border: 15px solid rebeccapurple;
   padding: 50px;
   margin: 20px;
   position: relative;
   top: 50%;
-  left: 35%;
+  left: 33%;
 }
 
 .buttons{
     transition-duration: 0.4s;
     position: relative;
     top: 50%;
-    left: 50%;
+    left: 47%;
 }
 
 .buttons:hover {
