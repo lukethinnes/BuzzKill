@@ -61,7 +61,7 @@ img {
   border:1px solid #ccc;
   font:16px/26px Georgia, Garamond, Serif;
   overflow:auto;
-  position:absolute;
+  position:realtive;
   top:50%;
   left:40%;
 }
