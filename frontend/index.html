@@ -17,11 +17,19 @@
     <div id="select-options">
         <h3>SELECT THE WAY YOU WANT YOUR BUZZ TO BE KILLED:</h3>
         <form method="GET" action="http://localhost:3001/effects.html" id="negative-effects">
-            <select name="name" id="side-effects">
+          <label for='side-effects' class='index-labels'>Side Effects:</label>  
+          <select name="name" id="side-effects" class='selects'>
 
 
             </select>
-            <input id="submit" type="submit">
+            <label for='race-options' class='index-labels'>Race:</label>
+            <select name="search" class='selects' id='race-options'>
+              <option value='sativa'>Sativa</option>
+              <option value='indica'>Indica</option>
+              <option value='hybrid'>Hybrid</option>
+              <option>None</option>
+            </select>
+            <input id='submit-button' type="submit" value='BUZZKILL'>
         </form>
     </div>
     <img id="melt" src="https://media.tumblr.com/a929530a17fa5238b4ef1663945666ec/tumblr_n50y66DGBL1qhlcmco1_500.gif"
