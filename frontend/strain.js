@@ -21,28 +21,28 @@ fetch(strainURL)
 
     h1.innerHTML = `Name: ${strain[0].name}`
     p.innerHTML = `Description: ${strain[0].desc}`
-    
+
 
     strainElement.append(h1, p)
   })
 
 fetch(strainURL)
-.then(response => response.json())
-.then(strain => {
-  console.log(strain)
-  fetch(`http://strainapi.evanbusse.com/TEkvrIZ/strains/data/effects/${strain[0].id}`)
   .then(response => response.json())
-  .then(effects => {
-    const h2 = document.createElement('h2')
-    h2.innerText = 'Other Negative Effects:'
-    strainElement.append(h2)
-    effects.negative.forEach(effect => {
-      if(effectName != effect){
+  .then(strain => {
+    console.log(strain)
+    fetch(`http://strainapi.evanbusse.com/TEkvrIZ/strains/data/effects/${strain[0].id}`)
+      .then(response => response.json())
+      .then(effects => {
         const h2 = document.createElement('h2')
-        h2.innerText = effect
+        h2.innerText = 'Other Negative Effects:'
         strainElement.append(h2)
-      }
-    })
-    
+        effects.negative.forEach(effect => {
+          if (effectName != effect) {
+            const h2 = document.createElement('h2')
+            h2.innerText = effect
+            strainElement.append(h2)
+          }
+        })
+
+      })
   })
-})
