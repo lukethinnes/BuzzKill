@@ -2,6 +2,9 @@ console.log("js Loaded")
 const strainElement = document.getElementById('strain-element')
 const queryParams = new URLSearchParams(window.location.search)
 const strainName = queryParams.get('name')
+const effectName = queryParams.get('effect')
+
+
 
 const baseURL = 'strainapi.evanbusse.com/TEkvrIZ/strains/search/name/NAME'
 let strainURL = baseURL
@@ -34,9 +37,11 @@ fetch(strainURL)
     h2.innerText = 'Other Negative Effects:'
     strainElement.append(h2)
     effects.negative.forEach(effect => {
-      const h2 = document.createElement('h2')
-      h2.innerText = effect
-      strainElement.append(h2)
+      if(effectName != effect){
+        const h2 = document.createElement('h2')
+        h2.innerText = effect
+        strainElement.append(h2)
+      }
     })
     
   })
