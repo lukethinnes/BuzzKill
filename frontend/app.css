@@ -3,15 +3,23 @@
 body {
     background-color: greenyellow;
     color: white;
-    background-image: repeating-radial-gradient(farthest-corner, rgb(255, 2, 87) 0.3%, rgba(243, 255, 82, 0.849) 0.8%, rgb(255, 0, 0) 0.8%);
+    background-image: repeating-radial-gradient(farthest-corner, rgb(255, 2, 2) 0.2%, rgba(251, 255, 198, 0.849) 0.3%, rgb(255, 0, 0) 0.1%);
     font-family: 'Calligraffitti', cursive;
     text-shadow: 1.5px 1.5px #000000;
+}
+
+.eye1{
+  float: left;
+}
+
+.eye2{
+  float: right;
 }
 
 h1 {
     display: flex;
     justify-content: center;
-    font-size: 40px;
+    font-size: 36px;
   background: -webkit-linear-gradient(#07e, #5b1);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -115,10 +123,11 @@ img {
 }
 
 .buttons{
+  margin-top: 20px;
     transition-duration: 0.4s;
     position: relative;
     top: 50%;
-    left: 47%;
+    left: 48%;
 }
 
 .buttons:hover {
@@ -172,3 +181,6 @@ img {
   background-color: #eee; /* Add a hover effect to all links, except for headers */
 }
 
+.audio{
+  display: none;
+}
