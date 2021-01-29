@@ -2,7 +2,7 @@
 
 > Find the strain that will cause you pain, and damage your brain!
 
-## Table of contents
+## Table of Contents
 
 * [General info](#general-info)
 * [Intro Video](#intro-video)
@@ -14,7 +14,7 @@
 * [Contact](#contact)
 * [License](#license)
 
-## General info
+## General Info
 
 Have you ever had a bad time while under the influence of marijuana?
 Have you ever WANTED to have a bad time while under the influence of marijuana?
@@ -59,14 +59,14 @@ li[i].style.display = "none";
 * Filters among strains and displays matching results for negative side effects
 * Lists other negative effects for optimization of bad time
 
-## To-do list
+## To-Do List
 
 * Add Google API to find closest dispensary which stocks given strain
 * Create a converse page oriented toward positive side effects
 
 ## Inspiration
 
-The biggest inspiration behind this page was the internet before it was monopolized and before every webpage seemed looked exactly the same. There is a quality to webpages that aren't easy on the eyes that both harken an era where the web seemed to be gleeming with excitement and potential, and this idea fit very comfortably into the idea of a panic-inducing page.
+The biggest inspiration behind this page was the internet before it was monopolized and before every webpage seemed to look exactly the same. There is a quality to webpages that aren't easy on the eyes that both harken an era where the web seemed to be gleeming with excitement and potential, and this idea fit very comfortably into the idea of a panic-inducing page.
 
 ## Credits
 
