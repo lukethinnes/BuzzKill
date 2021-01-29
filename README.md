@@ -35,19 +35,29 @@ After making your selection, you can either navigate back to the list or return 
 
 ## Code Examples
 
-Here is a portion of our code which conceals the selected side effect from a list of additional side effects:
+Here is a portion of our code which fetches the strains by effect and displays the additional negative effects:
 
 ```
-for (i = 0; i < li.length; i++) {
-a = li[i].getElementsByTagName("a")[0];
-txtValue = a.textContent || a.innerText;
-if (txtValue.toUpperCase().indexOf(filter) > -1) {
-li[i].style.display = "";
-} else {
-li[i].style.display = "none";
-}
-}
-}
+fetch(strainURL)
+  .then(response => response.json())
+  .then(strain => {
+    console.log(strain)
+    fetch(`http://strainapi.evanbusse.com/TEkvrIZ/strains/data/effects/${strain[0].id}`)
+      .then(response => response.json())
+      .then(effects => {
+        const h2 = document.createElement('h2')
+        h2.innerText = 'Other Negative Effects:'
+        strainElement.append(h2)
+        effects.negative.forEach(effect => {
+          if (effectName != effect) {
+            const h2 = document.createElement('h2')
+            h2.innerText = effect
+            strainElement.append(h2)
+          }
+        })
+
+      })
+  })
 ```
 
 ## Features
