@@ -79,4 +79,4 @@ The biggest inspiration behind this page was the internet before it was monopoli
 
 ## Credits
 
-Created by Nathan Fedzen and Luke Thinnes.
+Created by [Nathan Fedzen](https://www.linkedin.com/in/nathan-fedzen/) and [Luke Thinnes](https://www.linkedin.com/in/lucas-thinnes/).
