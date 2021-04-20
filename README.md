@@ -5,13 +5,13 @@
 ## Table of Contents
 
 * [General info](#general-info)
-* [Video Demonstration](#intro-video)
+* [Video Demonstration](#cideo-demonstration)
 * [Technologies](#technologies)
-* [Code Examples](#setup)
+* [Code Examples](#code-examples)
 * [Features](#features)
-* [To-Do List](#status)
+* [To-Do List](#to-do-list)
 * [Inspiration](#inspiration)
-* [Contact](#contact)
+* [Credits](#credits)
 
 ## General Info
 
