@@ -5,14 +5,13 @@
 ## Table of Contents
 
 * [General info](#general-info)
-* [Intro Video](#intro-video)
+* [Video Demonstration](#intro-video)
 * [Technologies](#technologies)
-* [Setup](#setup)
+* [Code Examples](#setup)
 * [Features](#features)
-* [Status](#status)
+* [To-Do List](#status)
 * [Inspiration](#inspiration)
 * [Contact](#contact)
-* [License](#license)
 
 ## General Info
 
